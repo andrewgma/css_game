@@ -19,6 +19,17 @@ function Level() {
 	}
 }
 
+Level.prototype.render = function(div_key) {
+	$(div_key).html(this.html);
+	for (var i = 0; i < this.css.keys().length; i++) {
+		var selector = this.css.keys()[i];
+		for (var j = 0; j < this.css[selector].keys(); j++) {
+			var property = this.css[selector][this.css[selector].keys()[j]];
+			$(div_key + ' ' + selector).css(property, this.css[selector][property]);
+		}
+	}
+}
+
 Level.prototype.test = function(user_object) {
 	for (var i = 0; i < this.css.keys().length; i++) {
 		var selector = this.css.keys()[i];

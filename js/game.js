@@ -14,6 +14,10 @@ Game.prototype.submit = function(user_object) {
 	return false;
 }
 
+Game.prototype.renderLevel = function() {
+	levels[currentLevel].render('#result');
+}
+
 Game.prototype.getLevelHTML = function() {
 	return levels[currentLevel].html;
 }
