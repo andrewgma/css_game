@@ -6,85 +6,117 @@ body{
 
 
 #mainCanvas{
-	margin: 0px;
-	width: 100%;
-	background-color: #e0e0e0;
-	height: 100%;
+	margin: 0px auto;
+	width: 90%;
+	margin-top: 30px;
 }
 
 
 #htmlWrapper{
 	width: 500px;
-	margin: 0 auto 30px auto;
-	position:absolute;
-	top: 300px;
-	left: 400px;
-
+	margin-top: 30px;
 }
 
 
-#cssWrapper{
-	margin: 0 auto;
-	width: 500px;
-	position: absolute;
-	top: 400px;
-	left: 400px;
+.playing{
+
 }
 
+.clearing{
+	clear:both;
+}
 
 
 #htmlText{
 	background-color: #dddddd;
 	display: block;
 	border: 1px solid #AAA;
-	width: 430px;
-	height: 40px;
+	width: 500px;
+	height: 200px;
 	font-family: Arial;
 	padding: 5px;
-	margin:  0 auto;
 }
 
 #cssText{
 	background-color: #eeeeee;
 	display: block;
 	border: 1px solid #AAA;
-	width: 430px;
-	height: 40px;
+	width: 450px;
+	height: 500px;
 	font-family: Arial;
 	padding: 5px;
-	margin: 0 auto;
+}
+
+.textAreaHeaderHTML{
+	width: 500px;
 }
 
 
-.textAreaHeader{
-	width: 430px;
-	margin: 0 auto;
+.textAreaHeaderCSS{
+	width: 450px;
+}
+
+
+#toMatch{
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+
+
+#userAttempt{
+	width: 10px;
+	height: 10px;
+	background-color: green;
+	position: absolute;
+	top: 50px;
+	left: 400px;
 }
 
 #output{
 	border:1px solid black;
 	width: 500px;
 	height: 300px;	
-	float:left;
-	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
+
+#fieldHolder{
+	width: 510px;
+	height: 320px;
+	position: relative;
+}
+
+
+#submitButton{
+	display: block;
+	margin: 20px auto 0 auto;
+}
 
 
 #result{
 	border:1px solid black;
         width: 500px;
-	height: 300px;   
-        float:left;
+	height: 300px;
 	margin-right: 100px;
-	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 
+#right{
+	float: right;
+	width: 500px;
+}
 
 
-
-
-
-
-
+#left{
+	float:left;
+	width: 510px;
+}
