@@ -1,0 +1,75 @@
+body{
+	margin: 0px;
+	width: 100%;
+	background-color: #f5f5f5;
+}
+
+
+#mainCanvas{
+	margin: 0px;
+	width: 100%;
+	background-color: #e0e0e0;
+	height: 100%;
+	padding: 300px 0;
+}
+
+
+#htmlWrapper{
+	width: 500px;
+	margin: 0 auto 30px auto;
+}
+
+
+#cssWrapper{
+	margin: 0 auto 30px auto;
+	width: 500px;
+}
+
+
+
+#htmlText{
+	background-color: #dddddd;
+	display: block;
+	border: 1px solid #AAA;
+	width: 430px;
+	height: 40px;
+	font-family: Arial;
+	padding: 5px;
+	margin:  0 auto;
+}
+
+#cssText{
+	background-color: #eeeeee;
+	display: block;
+	border: 1px solid #AAA;
+	width: 430px;
+	height: 40px;
+	font-family: Arial;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+
+.textAreaHeader{
+	width: 430px;
+	margin: 0 auto;
+}
+
+
+#toMatch{
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	position: absolute;
+	top: 50px;
+	left: 900px;
+}
+
+
+#matching{
+	width: 10px;
+	height: 10px;
+	background-color: green;
+	position: absolute;
+
+}
