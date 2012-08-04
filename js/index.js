@@ -24,9 +24,27 @@ function onReady() {
 	game = new Game();
 	game.renderOutput('');
 	$('#htmlText').val(game.getLevelHTML());
-	$('#cssText').keyup(function() {
+	$('#cssText').keyup(function(event) {
 		game.renderOutput($(this).val());
-		game.submit();
+		if (event.keyCode == 13)
+			game.submit(onNextLevel);
 	});
+	$('#submitButton').click(function() {
+		game.submit(onNextLevel);
+	});
+	game.renderLevel();
+	timeLeft = 120;
+	setInterval(function() {
+		$('#time_left').html(--timeLeft);
+		if (timeLeft == 0) {
+			window.location.href = 'complete.html';
+		}
+	}, 1000);
+}
+
+function onNextLevel() {
+	console.log(game.currentLevel);
+	game.renderOutput('');
+	$('#htmlText').val(game.getLevelHTML());
 	game.renderLevel();
 }

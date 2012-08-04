@@ -6,9 +6,12 @@ body{
 
 
 #mainCanvas{
-	margin: 0px auto;
-	width: 90%;
+	width: 1200px;
 	margin-top: 30px;
+	position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -600px;
 }
 
 
@@ -31,8 +34,8 @@ body{
 	background-color: #dddddd;
 	display: block;
 	border: 1px solid #AAA;
-	width: 500px;
-	height: 200px;
+	width: 800px;
+	height: 230px;
 	font-family: Arial;
 	padding: 5px;
 }
@@ -41,8 +44,8 @@ body{
 	background-color: #eeeeee;
 	display: block;
 	border: 1px solid #AAA;
-	width: 450px;
-	height: 500px;
+	width: 300px;
+	height: 600px;
 	font-family: Arial;
 	padding: 5px;
 }
@@ -53,7 +56,7 @@ body{
 
 
 .textAreaHeaderCSS{
-	width: 450px;
+	width: 300px;
 }
 
 
@@ -77,12 +80,13 @@ body{
 }
 
 #output{
-	border:1px solid black;
-	width: 500px;
+	box-shadow:0 0 0 1px black;
+	width: 400px;
 	height: 300px;	
 	position: absolute;
 	top: 0;
 	left: 0;
+	overflow:hidden;
 }
 
 
@@ -100,23 +104,36 @@ body{
 
 
 #result{
-	border:1px solid black;
-        width: 500px;
+	box-shadow:0 0 0 1px black;
+    width:400px;
 	height: 300px;
-	margin-right: 100px;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 410px;
+	overflow:hidden;
 }
 
 
-#right{
-	float: right;
-	width: 500px;
+#div_right{
+	position:absolute;
+	left:870px;
+	width: 300px;
 }
 
 
-#left{
-	float:left;
-	width: 510px;
+#div_left{
+	position:absolute;
+	left:0;
+	width: 870px;
+}
+
+#time_left {
+	position:absolute;
+	left:0;
+	top:0;
+	padding:15px 30px 25px 10px;
+	width:30px;
+	font-size:24px;
+	border-bottom-right-radius:80px;
+	background:red;
 }

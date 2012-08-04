@@ -1,16 +1,20 @@
 function Game() {
 	this.levels = [];
-	this.currentLevel = 0;
-	this.levels.push(new Level());
-	this.levels.push(new Level());
+	this.currentLevel = 2;
+	this.levels.push(new RandomBoxLevel());
+	this.levels.push(new LayoutLevel());
+	this.levels.push(new BorderRadiusLevel());
+	this.levels.push(new RandomBoxLevel());
+	this.levels.push(new ListLevel());
 };
 
 
-Game.prototype.submit = function() {
-	if (this.levels[this.currentLevel].test('#output')) {
-		this.currentLevel++;
+Game.prototype.submit = function(callback) {
+	this.levels[this.currentLevel].test('#output', function() {
+		game.currentLevel++;
+		callback();
 		return true;
-	}
+	});
 	return false;
 }
 
