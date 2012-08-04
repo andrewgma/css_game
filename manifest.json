@@ -1,0 +1,16 @@
+{
+  "name": "CSS Game",
+  "description": "Pithy description (132 characters or less, no HTML)",
+  "version": "0.0.0.1",
+  "manifest_version": 2,
+  "app": {
+    "launch": {
+      "local_path" : "index.html"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "http://*.google.com/",
+    "unlimitedStorage"
+  ]
+}
