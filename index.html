@@ -1,33 +1,10 @@
+<!DOCTYPE html>
 <html>
-
 <head>
 <title>CSS GAME</title>
 <link rel="stylesheet" type="text/css" href="cssGame.css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/head.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-		ready1 = true;
-		onReady();
-	});
-	head.js(
-		'js/level.js', 
-		'js/game.js',
-		function() {
-			ready2 = true;
-			onReady();
-		});
-
-	function onReady() {
-		if (!ready1 || !ready2) {
-			return false;
-		}
-		var game = new Game();
-		$('#htmlText').val(game.getLevelHTML());
-		$('#cssText').keypress(function() {
-			game.submit()
-		});
-	}
+<script type="text/javascript" src="js/index.js"></script>
 </script>
 </head>
 
@@ -37,16 +14,10 @@
 
 
 <div id="result">
-<div id='toMatch'>
- 
-</div>
 </div>
 
 
 <div id='output'>
-<div id='userAttempt'>
-
-</div>
 </div>
 
 
@@ -61,7 +32,6 @@
 <div class='textAreaHeader'><span>Your CSS:</span></div>
 <textarea id="cssText"></textarea>
 </div>
-
 
 
 </body>
